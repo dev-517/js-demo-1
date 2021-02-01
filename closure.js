@@ -2,7 +2,7 @@ function counter(count) {
 
     function inc() {
         ++count;
-        console.log(count);
+        console.log(count);   
     }
 
     function dec() {
