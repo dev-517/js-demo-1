@@ -5,7 +5,6 @@
 // 2,4,6,8 
 // 2/2 4/2 6/2 
 
-
 function isEven(x) {
     // hard coding 
     // var x = 20;
@@ -58,11 +57,4 @@ var res = isPrime(15);
 console.log(res);
 
 
-function sort(arr) {
 
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = i + 1; j < arr.length; j++) {
-            
-        }
-    }
-}
