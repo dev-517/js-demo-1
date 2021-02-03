@@ -42,5 +42,3 @@ function print2(n) {
         console.log(i);
     }
 }
-
-print(100)
