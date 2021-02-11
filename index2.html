@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submit() {
+            const frmSignup = document.getElementsByName('frmSignup')[0];
+
+            console.log(frmSignup.value);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frmSignup" method="post">
+        <div>
+            <input name="firstname" type="text" placeholder="First Name" />
+        </div>
+        <br />
+        <div>
+            <input name="lastname" type="text" placeholder="Last Name" />
+        </div>
+        <br />
+        <div>
+            <input name="password" type="password" placeholder="Password" />
+        </div>
+        <br />
+        <div>
+            <input onclick="return submit()" type="submit" value="Save" />
+        </div>
+    </form>
+</body>
+
+</html>

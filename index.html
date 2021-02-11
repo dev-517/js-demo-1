@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Demo</title>
 </head>
-<script>
-    // DOM
-    function onBtnClick() {
-        console.log("clicked");
-    }
-
-    function create() {
-        const allBody = document.getElementsByTagName('body');
-        const body = allBody[0];
-        const div = document.createElement('div');
-        div.innerText = "This is dynamic div";
-
-        body.appendChild(div);
-        console.log("created");
-    }
-</script>
+<script src="scripts.js"></script>
 
 <body>
 
-    <div>
-        This is a static div
-    </div>
+    <form>
+        <div>
+            <input name="firstname" onkeyup="onSave()" type="text" placeholder="First Name" />
+        </div>
+        <br />
+        <div>
+            <input name="lastname" onkeyup="onSave()" type="text" placeholder="Last Name" />
+        </div>
+        <br />
+        <div>
+            <input name="password" type="password" placeholder="Password" />
+        </div>
+        <br />
+        <div>
+            <input onclick="onSave()" type="button" value="Save" />
+        </div>
 
-    <button onclick="onBtnClick()">Click</button>
-
-    <button onclick="create()">Create Objects</button>
+        <div>
+            <label id="fname" />
+        </div>
+        <div>
+            <label id="lname" />
+        </div>
+    </form>
 </body>
 
 </html>
